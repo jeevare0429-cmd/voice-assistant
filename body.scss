@@ -1,0 +1,40 @@
+.orb {
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff4ecd, #5e00ff, #00eaff);
+  box-shadow: 0 0 40px #ff4ecd, 0 0 60px #5e00ff, 0 0 90px #00eaff;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 40px #ff4ecd, 0 0 60px #5e00ff;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px #ff4ecd, 0 0 80px #5e00ff;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 40px #00eaff, 0 0 60px #5e00ff;
+  }
+}
+
+.btn {
+  margin: 15px;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4ecd, #5e00ff, #00eaff);
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
